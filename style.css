@@ -1,0 +1,277 @@
+:root {
+    --bg-color: #0f0f13;
+    --card-bg: #1a1a20;
+    --text-primary: #e0e0e0;
+    --text-secondary: #a0a0a0;
+    --accent: #8a2be2;
+    /* Blue Violet */
+    --accent-hover: #9b4dca;
+    --font-heading: 'Cinzel', serif;
+    --font-body: 'Lato', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Background Overlay for texture/effect */
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 50%, rgba(30, 30, 40, 0.5), rgba(15, 15, 19, 0.9));
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Header & Nav */
+header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 2rem;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+/* Hero Section */
+.hero h1 {
+    font-family: var(--font-heading);
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    animation: fadeInDown 1.5s ease-out;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    animation: fadeInUp 1.5s ease-out 0.5s backwards;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: transparent;
+    border: 2px solid var(--accent);
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    animation: fadeInUp 1.5s ease-out 1s backwards;
+}
+
+.cta-button:hover {
+    background-color: var(--accent);
+    color: #fff;
+    box-shadow: 0 0 20px rgba(138, 43, 226, 0.5);
+    transform: translateY(-3px);
+}
+
+/* Sections */
+.mystery-section {
+    padding: 6rem 2rem;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-wrapper {
+    max-width: 1200px;
+    width: 100%;
+}
+
+h2 {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: var(--text-primary);
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent);
+    margin: 1rem auto 0;
+}
+
+/* Cards */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-color: var(--accent);
+}
+
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    animation: float 6s ease-in-out infinite;
+}
+
+.card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--accent);
+}
+
+.card p {
+    color: var(--text-secondary);
+}
+
+/* Footer */
+footer {
+    padding: 2rem;
+    text-align: center;
+    background-color: #0a0a0c;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Scroll Animation Classes (to be toggled by JS) */
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        /* Simple hide for mobile for now, or could be hamburger */
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Remove all unwanted blue underlines */
+a {
+    text-decoration: none !important;
+    color: inherit !important;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Mysteries Unveiled</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .contact-container {
+            max-width: 800px;
+            margin: 8rem auto 3rem;
+            padding: 2rem;
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .contact-container h2 {
+            text-align: center;
+            font-family: var(--font-heading);
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .contact-container p {
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+            font-weight: bold;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: var(--bg-color);
+            color: var(--text-primary);
+            font-size: 1rem;
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 1rem;
+            background: var(--accent);
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s ease;
+            font-weight: bold;
+        }
+
+        .contact-form button:hover {
+            background: var(--accent-hover);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="background-overlay"></div>
+
+    <nav>
+        <div class="logo">Mysteries Unveiled</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="contact-container">
+        <h2>Contact Us</h2>
+        <p>Have questions, suggestions, or found something wrong? Send us a message!</p>
+
+        <form class="contact-form" onsubmit="alert('Message sent successfully!'); return false;">
+            <label>Your Name</label>
+            <input type="text" placeholder="Enter your name" required>
+
+            <label>Your Email</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Your Message</label>
+            <textarea rows="5" placeholder="Write your message..." required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2025 Mysteries Unveiled. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

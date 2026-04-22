@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About This Website</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .about-container {
+            max-width: 900px;
+            margin: 8rem auto 3rem;
+            padding: 2rem;
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .about-container h1 {
+            font-family: var(--font-heading);
+            font-size: 2.8rem;
+            color: var(--accent);
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-container p,
+        .about-container li {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+            line-height: 1.8;
+        }
+
+        .about-list {
+            margin-left: 1.5rem;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        .back-btn:hover {
+            color: var(--accent-hover);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="background-overlay"></div>
+
+    <nav>
+        <div class="logo">Mysteries Unveiled</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="about-container">
+
+        <h1>About This Website</h1>
+
+        <p>
+            This website was created as part of a Web Development assignment.
+            It showcases a collection of the world's greatest unsolved mysteries,
+            each with a dedicated details page loaded dynamically using JSON and JavaScript.
+        </p>
+
+        <p>The purpose of this project is to demonstrate:</p>
+
+        <ul class="about-list">
+            <li>HTML structure and multi-page navigation</li>
+            <li>CSS styling and responsive design</li>
+            <li>JavaScript DOM manipulation</li>
+            <li>Loading external JSON data</li>
+            <li>Using URL parameters to display dynamic content</li>
+        </ul>
+
+        <p><strong>Created by:</strong> Tayyba Bashir and Zainab Parveen</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Mysteries Unveiled. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+[
+    {
+        "id": "pyramids",
+        "title": "The Great Pyramids",
+        "category": "Ancient",
+        "icon": "🏛️",
+        "short_desc": "How were they truly built? The precision remains a marvel of engineering.",
+        "full_desc": "The Great Pyramid of Giza is the oldest and largest of the three pyramids in the Giza pyramid complex. The mystery lies in the construction techniques used to transport and place the massive stone blocks with incredible precision.",
+        "location": "Giza, Egypt",
+        "date": "c. 2560 BC"
+    },
+    {
+        "id": "stonehenge",
+        "title": "Stonehenge",
+        "category": "Ancient",
+        "icon": "🗿",
+        "short_desc": "A prehistoric monument with a purpose lost to time.",
+        "full_desc": "Stonehenge is a prehistoric monument in England. Its purpose remains debated — temple, burial site, or astronomical calendar.",
+        "location": "Wiltshire, England",
+        "date": "c. 3000 BC to 2000 BC"
+    },
+    {
+        "id": "dark-matter",
+        "title": "Dark Matter",
+        "category": "Science",
+        "icon": "🌌",
+        "short_desc": "It makes up most of the universe, yet we cannot see or touch it.",
+        "full_desc": "Dark matter accounts for 85% of the universe's mass but does not interact with light. Its existence is known only through gravity.",
+        "location": "Universal",
+        "date": "Discovered 1933"
+    },
+    {
+        "id": "consciousness",
+        "title": "Consciousness",
+        "category": "Science",
+        "icon": "🧠",
+        "short_desc": "How does physical matter give rise to subjective experience?",
+        "full_desc": "The hard problem of consciousness explores how brain activity produces subjective awareness — one of science's biggest mysteries.",
+        "location": "Human Brain",
+        "date": "Ongoing"
+    },
+    {
+        "id": "black-holes",
+        "title": "Black Holes",
+        "category": "Space",
+        "icon": "🕳️",
+        "short_desc": "Gravity so strong that not even light escapes.",
+        "full_desc": "A black hole is a region where gravity becomes infinite at a singularity. What happens inside is still unknown.",
+        "location": "Space",
+        "date": "Theorized 1916"
+    },
+    {
+        "id": "wow-signal",
+        "title": "The Wow! Signal",
+        "category": "Space",
+        "icon": "📡",
+        "short_desc": "A strong narrowband radio signal detected in 1977.",
+        "full_desc": "A mysterious radio signal detected in 1977 that looked like it came from deep space. Never detected again — possible alien signal.",
+        "location": "Sagittarius Constellation",
+        "date": "August 15, 1977"
+    },
+    {
+        "id": "amelia-earhart",
+        "title": "Amelia Earhart",
+        "category": "Missing",
+        "icon": "✈️",
+        "short_desc": "The aviation pioneer who vanished over the Pacific Ocean.",
+        "full_desc": "Amelia Earhart disappeared in 1937 while attempting to fly around the world. No trace of her or her aircraft has been confirmed.",
+        "location": "Pacific Ocean",
+        "date": "July 2, 1937"
+    },
+    {
+        "id": "mary-celeste",
+        "title": "Mary Celeste",
+        "category": "Missing",
+        "icon": "🚢",
+        "short_desc": "Found deserted yet perfectly seaworthy.",
+        "full_desc": "Mary Celeste was discovered abandoned in 1872. Cargo intact, crew belongings untouched, lifeboat missing — mystery unresolved.",
+        "location": "Atlantic Ocean",
+        "date": "December 4, 1872"
+    },
+    {
+        "id": "bermuda-triangle",
+        "title": "Bermuda Triangle",
+        "category": "Unexplained",
+        "icon": "🔺",
+        "short_desc": "Region where planes and ships reportedly vanish.",
+        "full_desc": "Numerous unexplained disappearances have occurred in the Bermuda Triangle region — theories include magnetic anomalies and rogue waves.",
+        "location": "North Atlantic Ocean",
+        "date": "Ongoing"
+    },
+    {
+        "id": "bigfoot",
+        "title": "Bigfoot",
+        "category": "Unexplained",
+        "icon": "👣",
+        "short_desc": "A giant ape-like creature said to roam forests.",
+        "full_desc": "Bigfoot sightings have been reported for decades. No scientific evidence exists, yet thousands claim encounters.",
+        "location": "North America",
+        "date": "Ongoing"
+    }
+]
